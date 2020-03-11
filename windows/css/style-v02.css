@@ -1,0 +1,260 @@
+body{
+    margin: 0;
+}
+.pc {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+img{
+    width: 100%;
+}
+.navbar{
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+}
+.nav-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0 5%;
+    box-sizing: border-box;
+    max-width: 1600px;
+}
+.logo{
+    width: 110px;
+    padding-left: 5px;
+    padding-right: 16px;
+}
+
+.navL ul{
+    display: flex;
+    padding: 0;
+}
+.navL ul li {
+    /* list-style: none; */
+    display: inline-block;
+    padding: 2px 8px ;
+    position: relative;
+}
+
+.navL ul li a::before{
+    background-color: currentColor;
+    content: "";
+    display: none;
+    margin: auto;
+    height: 2.5px;
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    width: calc(100% - 10px);
+}
+.navR{
+    margin-left: auto;
+    display: flex;
+}
+.menu , .search , .chart , .signin {
+    padding: 0px 16px 0px 15px;
+    line-height: 40px;
+    text-decoration: none;
+    position: relative;
+}
+.menu a::before, .search a::before, .chart a::before, .signin a::before{
+    background: currentColor;
+    content: "";
+    display: none;
+    height: 2px;
+    position: absolute;
+    left: 10px;
+    bottom: 0px;
+    width: calc(100% - 15px);
+}
+
+.menu a::after {
+    content: "∨";
+    position: absolute;
+    right: -1px;
+    top: 1px;
+}
+.navL ul li a:hover::before,.menu a:hover::before, .search a:hover::before, .chart a:hover::before, .signin a:hover::before {
+    display: block; 
+}
+.Ximg{
+    width: 25px;
+    padding-top: 8px;
+    box-sizing: border-box;
+}
+.banner-container{
+    display: flex;
+    width: 100%;
+    padding: 0 5%;
+    max-width: 1600px;
+    margin: auto;
+    box-sizing: border-box;
+    align-items: center;
+}
+.banner {
+    width: 100%;
+    /* height: 30vw; */
+}
+.banner-content{
+    position: absolute;
+    z-index: 1;
+    margin: 0 0 0 96px;
+}
+
+
+.banner-btn{
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline;
+    padding: 12px 20px 8px 22px;
+}
+
+.banner-btn::before{
+    background: currentColor;
+    content: "";
+    display: none;
+    height: 2px;
+    position: absolute;
+    left: 20px;
+    bottom: 0px;
+    width: 20%;
+}
+.banner-btn:hover::before{
+    display: block; 
+    transition: 1s;
+}
+.a-btn{
+    width: 10px;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 40px 5%;
+    box-sizing: border-box;
+}
+
+.card {
+    width: calc(25% - 12px);
+    /* padding-right: 10px; */
+    box-sizing: border-box;
+}
+
+.card_content h2,.card_content p {
+    margin: 0;
+}
+.social-container{
+    display: flex;
+    width: 100%;
+    padding: 0 5%;
+    max-width: 1600px;
+    box-sizing: border-box;
+}
+.social-pad{
+    display: flex;
+    /* margin-right: auto; */
+    align-items: center;
+}
+.social-pad h2 {
+    padding: 30px 0;
+    margin-right: 20px;
+}
+.social-pad a{
+    margin-right: 10px;
+}
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 5%;
+    max-width: 1600px;
+    box-sizing: border-box;
+    background-color: rgb(233, 233, 233);
+}
+.footer-list{
+    width: 9%;
+    margin-right: 100px;
+}
+.footer-list ul{
+    padding: 0;
+}
+.footer-list h2{
+    padding-top: 10px;
+}
+.footer-list ul li{
+    list-style: none;
+    padding: 5px;
+    position: relative;
+}
+.footer-list ul li::before{
+    background-color: currentColor;
+    content: "";
+    display: none;
+    margin: auto;
+    height: 1px;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+}
+.footer-list ul li:hover::before{
+    display: block; 
+}
+.burger{
+    width: 25px;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1079px){
+    .pc {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .logo{
+        position: absolute;
+        right: calc(50% - 54px);
+    }
+    .card {
+        width: calc(50% - 12px);
+        /* padding-right: 10px; */
+        box-sizing: border-box;
+    }
+    .footer-list{
+        width: 18%;
+        margin-right: 100px;
+    }
+    .menu , .search , .chart , .signin {
+        display: none;
+    }
+    .Ximg{
+        margin-left: 20px;
+    }
+    .banner-content{
+        margin: 0 0 0 40px;
+    }
+}
+@media screen and (max-width: 550px){
+    .card {
+        width: 100%;
+        /* padding-right: 10px; */
+        box-sizing: border-box;
+    }
+    .Ximg{
+        margin-left: 5px;
+    }
+    .banner-content{
+        display: none;
+    }
+}
