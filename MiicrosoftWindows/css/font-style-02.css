@@ -1,0 +1,48 @@
+*{
+    font-family: 'Segoe UI',SegoeUI,'Microsoft JhengHei',微軟正黑體,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.navL , ul li a{
+    font-size: 13px;
+    color: black;
+}
+.navR a,.menu a,.search a,.chart a,.signin  a{
+    font-size: 13px;
+    color: black;
+}
+.social-pad h2 {
+    font-size: 16px;
+}
+.footer-list ul h2{
+    font-size: 15px;
+}
+.footer-list ul li{
+    font-size: 13px;
+}
+.banner-content h2{
+    margin: 0 0 15px 0;
+    font-size: 46px;
+    font-weight: 600;
+}
+.banner-content p{
+    font-size: 15px;
+    font-weight: 400px;
+    margin: 0 0 30px 0;
+}
+.card-content{
+    font-size: 10px;
+}
+@media screen and (max-width: 1079px){
+    .banner-content h2{
+        margin: 0 0 15px 0;
+        font-size: 36px;
+        font-weight: 400;
+    }
+    .banner-content h3{
+        font-size: 12px;
+        font-weight: 50px;
+        margin: 0 0 30px 0;
+    }
+}
+@media screen and (max-width: 550px){
+
+}
